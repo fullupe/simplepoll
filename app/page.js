@@ -6,18 +6,21 @@ export default function Home() {
     {
       id:1,
       name:"william",
+      vote_count:122,
       img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tEwSiItq8aCzctBZx9cmTtS8odxxjpSzyRLN_T4d-pzQjzB1UENr6_XwY4Qp_khEVLM&usqp=CAU"
      
     },
     {
       id:2,
-      name:"william",
+      vote_count:12,
+      name:"kenneth",
       img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tEwSiItq8aCzctBZx9cmTtS8odxxjpSzyRLN_T4d-pzQjzB1UENr6_XwY4Qp_khEVLM&usqp=CAU"
      
     },
     {
       id:3,
-      name:"william",
+      vote_count:142,
+      name:"Dey",
       img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5tEwSiItq8aCzctBZx9cmTtS8odxxjpSzyRLN_T4d-pzQjzB1UENr6_XwY4Qp_khEVLM&usqp=CAU"
      
     }
@@ -36,7 +39,11 @@ export default function Home() {
 
          <div className="flex w-full items-center justify-around py-4 ">
          <img className=" flex w-40 h-40 object-cover rounded-full " src={poll.img} alt="img"/>
+
+         <div className="flex flex-col items-center justify-center space-y-2">
+          <p className=" w-12 h-12 bg-red-800 rounded-full text-center justify-center items-center flex ">{poll.vote_count}</p>
           <button className="flexd h-8 bg-red-800  w-24 rounded-lg ">vote</button>
+         </div>
 
          </div>
 
